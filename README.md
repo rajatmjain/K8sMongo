@@ -24,6 +24,9 @@ To get started with K8sMongo, follow these steps:
 9. If required, update the MongoDB server URL configuration for mongo-express using the provided ConfigMap file (`mongodb-configmap.yaml`).
 10. Deploy mongo-express in your Kubernetes cluster using the deployment file: `kubectl apply -f mongoexpress-deployment.yaml`
 11. (Optional) Expose the mongo-express service externally: `kubectl apply -f mongoexpress-service.yaml`
+12. (Optional) Expose the mongo-express ingress externally: `kubectl apply -f mongoexpress-ingress.yaml`
+13. (Optional) Create a mapping between the host and IP through `sudo vim /etc/hosts`, example: `192.168.64.5  mongoexpressk8s.com`
+14. (Optional) Access mongoexpress-service by going to `http://mongoexpressk8s.com` in the browser.
 
 ## Contributing
 
